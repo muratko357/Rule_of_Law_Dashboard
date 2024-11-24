@@ -1,0 +1,123 @@
+Formatted Rank = 
+VAR Rank_ = [Country Rank by Year]  // Ensure this is using your working rank measure
+VAR Total = [Country Count by Year-Indicator]  
+
+RETURN
+
+IF(
+    NOT ISBLANK(Rank_),
+    FORMAT(Rank_, "General Number") & "/" & FORMAT(Total, "General Number"),
+    BLANK()
+)
+
+
+
+
+Country Rank by Year = 
+VAR SelectedYear = MAX('Country_Year'[year])
+VAR SelectedParam = SELECTEDVALUE('Parameter RL'[Indicator RL], "Rule of Law Index")
+RETURN
+RANKX(
+    FILTER(
+        ALL('Country_Year'),  // Removing any filters on 'Country_Year'
+        'Country_Year'[year] = SelectedYear
+        && NOT(ISBLANK(
+            SWITCH(
+                SelectedParam,
+                "Rule of Law Index", AVERAGE('RL-Values'[Rule of Law Index]),
+                "Freedom from torture", AVERAGE('RL-Values'[Freedom from torture]),
+                "Freedom from political killings", AVERAGE('RL-Values'[Freedom from political killings]),
+                "Transparent laws with predictable enforcement", AVERAGE('RL-Values'[Transparent laws with predictable enforcement]),
+                "Access to justice for men", AVERAGE('RL-Values'[Access to justice for men]),
+                "Access to justice for women", AVERAGE('RL-Values'[Access to justice for women]),
+                "Judicial accountability", AVERAGE('RL-Values'[Judicial accountability]),
+                "Judicial corruption decision", AVERAGE('RL-Values'[Judicial corruption decision]),
+                "High court independence", AVERAGE('RL-Values'[High court independence]),
+                "Lower court independence", AVERAGE('RL-Values'[Lower court independence]),
+                "Compliance with high court", AVERAGE('RL-Values'[Compliance with high court]),
+                "Compliance with judiciary", AVERAGE('RL-Values'[Compliance with judiciary]),
+                "Executive respects constitution", AVERAGE('RL-Values'[Executive respects constitution]),
+                "Executive bribery and corrupt exchanges", AVERAGE('RL-Values'[Executive bribery and corrupt exchanges]),
+                "Executive embezzlement and theft", AVERAGE('RL-Values'[Executive embezzlement and theft]),
+                "Public sector corrupt exchanges", AVERAGE('RL-Values'[Public sector corrupt exchanges]),
+                "Public sector theft", AVERAGE('RL-Values'[Public sector theft]),
+                "Rigorous and impartial public administration", AVERAGE('RL-Values'[Rigorous and impartial public administration]),
+                "Property rights for women", AVERAGE('RL-Values'[Property rights for women]),
+                "Property rights for men", AVERAGE('RL-Values'[Property rights for men]),
+                BLANK()
+            )
+        )
+    )),
+    CALCULATE(
+        SWITCH(
+            SelectedParam,
+            "Rule of Law Index", AVERAGE('RL-Values'[Rule of Law Index]),
+            "Freedom from torture", AVERAGE('RL-Values'[Freedom from torture]),
+            "Freedom from political killings", AVERAGE('RL-Values'[Freedom from political killings]),
+            "Transparent laws with predictable enforcement", AVERAGE('RL-Values'[Transparent laws with predictable enforcement]),
+            "Access to justice for men", AVERAGE('RL-Values'[Access to justice for men]),
+            "Access to justice for women", AVERAGE('RL-Values'[Access to justice for women]),
+            "Judicial accountability", AVERAGE('RL-Values'[Judicial accountability]),
+            "Judicial corruption decision", AVERAGE('RL-Values'[Judicial corruption decision]),
+            "High court independence", AVERAGE('RL-Values'[High court independence]),
+            "Lower court independence", AVERAGE('RL-Values'[Lower court independence]),
+            "Compliance with high court", AVERAGE('RL-Values'[Compliance with high court]),
+            "Compliance with judiciary", AVERAGE('RL-Values'[Compliance with judiciary]),
+            "Executive respects constitution", AVERAGE('RL-Values'[Executive respects constitution]),
+            "Executive bribery and corrupt exchanges", AVERAGE('RL-Values'[Executive bribery and corrupt exchanges]),
+            "Executive embezzlement and theft", AVERAGE('RL-Values'[Executive embezzlement and theft]),
+            "Public sector corrupt exchanges", AVERAGE('RL-Values'[Public sector corrupt exchanges]),
+            "Public sector theft", AVERAGE('RL-Values'[Public sector theft]),
+            "Rigorous and impartial public administration", AVERAGE('RL-Values'[Rigorous and impartial public administration]),
+            "Property rights for women", AVERAGE('RL-Values'[Property rights for women]),
+            "Property rights for men", AVERAGE('RL-Values'[Property rights for men]),
+            BLANK()
+        )
+    ),
+    ,
+    DESC,
+    Skip
+)
+
+
+
+Country Count by Year-Indicator = 
+VAR SelectedYear = MAX('Country_Year'[year])
+VAR SelectedParam = SELECTEDVALUE('Parameter RL'[Indicator RL], "Rule of Law Index")
+RETURN
+CALCULATE(
+    COUNTROWS(
+        FILTER(
+            ALL('Country_Year'),
+            'Country_Year'[year] = SelectedYear
+            && NOT(ISBLANK(
+                SWITCH(
+                    SelectedParam,
+                    "Rule of Law Index", AVERAGE('RL-Values'[Rule of Law Index]),
+                    "Freedom from torture", AVERAGE('RL-Values'[Freedom from torture]),
+                    "Freedom from political killings", AVERAGE('RL-Values'[Freedom from political killings]),
+                    "Transparent laws with predictable enforcement", AVERAGE('RL-Values'[Transparent laws with predictable enforcement]),
+                    "Access to justice for men", AVERAGE('RL-Values'[Access to justice for men]),
+                    "Access to justice for women", AVERAGE('RL-Values'[Access to justice for women]),
+                    "Judicial accountability", AVERAGE('RL-Values'[Judicial accountability]),
+                    "Judicial corruption decision", AVERAGE('RL-Values'[Judicial corruption decision]),
+                    "High court independence", AVERAGE('RL-Values'[High court independence]),
+                    "Lower court independence", AVERAGE('RL-Values'[Lower court independence]),
+                    "Compliance with high court", AVERAGE('RL-Values'[Compliance with high court]),
+                    "Compliance with judiciary", AVERAGE('RL-Values'[Compliance with judiciary]),
+                    "Executive respects constitution", AVERAGE('RL-Values'[Executive respects constitution]),
+                    "Executive bribery and corrupt exchanges", AVERAGE('RL-Values'[Executive bribery and corrupt exchanges]),
+                    "Executive embezzlement and theft", AVERAGE('RL-Values'[Executive embezzlement and theft]),
+                    "Public sector corrupt exchanges", AVERAGE('RL-Values'[Public sector corrupt exchanges]),
+                    "Public sector theft", AVERAGE('RL-Values'[Public sector theft]),
+                    "Rigorous and impartial public administration", AVERAGE('RL-Values'[Rigorous and impartial public administration]),
+                    "Property rights for women", AVERAGE('RL-Values'[Property rights for women]),
+                    "Property rights for men", AVERAGE('RL-Values'[Property rights for men]),
+                    BLANK()
+                )
+            ))
+        )
+    ),
+    REMOVEFILTERS('Country_Year')
+)
+
