@@ -1,0 +1,18 @@
+Event EU = 
+IF(
+    'Country_Year'[EU Membership] = "Yes",
+    SWITCH(
+        'Country_Year'[year],
+        1957, "Belgium, France, Germany, Italy, Luxembourg, and the Netherlands sign the Treaty of Rome. This establishes the European Economic Community (EEC), which would eventually become the EU we know today.",
+        1973, "EU First enlargement: Denmark, Ireland and the United Kingdom join the EEC, raising the number of Member States to 9.",
+        1981, "EU Second enlargement: Membership of the EEC reaches 10 when Greece joins.",
+        1986, "EU Third enlargement: Spain and Portugal join the EEC. The number of Member States is now 12.",
+        1995, "EU Fourth enlargement: Austria, Finland, and Sweden join the European Union (EU), the successor of the EEC following the Treaty of Maastricht in 1993. The 15 members now cover almost the whole of western Europe.",
+        2004, "EU Fifth enlargement: Ten new countries join the EU: Cyprus, Czech Republic, Estonia, Hungary, Latvia, Lithuania, Malta, Poland, Slovakia, and Slovenia. This is the largest enlargement in terms of people and number of countries.",
+        2007, "EU Sixth enlargement: Bulgaria and Romania join the EU.",
+        2013, "EU Seventh enlargement: Croatia joins the EU.",
+        2020, "United Kingdom exits the EU.",
+        BLANK()  // default return if none of the years match
+    ),
+    BLANK()  // return if 'EU Membership' is not "Yes"
+)
