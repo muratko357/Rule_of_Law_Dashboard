@@ -24,3 +24,8 @@ On drill-through pages, users can view each selected country’s historical name
 Tooltips and dynamic text boxes provide definitions and detailed explanations for each indicator, alongside contextual information from the dataset codebook and relevant academic references.
 
 <img align="left" width="500" height="300"  alt="Inventory Dashboard" style="margin: 0 10px 0 0;" src="Images/Drill_through_page.png"/>   
+
+**Appendix**
+
+- DAX code scripts for dynamic measures and visualization titles
+- V-Dem database codebook, published by University of Gothenburg, V-Dem Institute in 2024
