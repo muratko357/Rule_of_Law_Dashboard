@@ -2,6 +2,8 @@
 
 ## Rule of Law: A Historical Comparison of Countries' Performances 1789-2023
 
+_Tools: Power BI, DAX_
+
 This interactive Power BI dashboard leverages the V-Dem Dataset (Varieties of Democracy) and provides a comprehensive analysis of the Rule of Law Index and related indicators from 1789 to 2023, offering insights into governance standards across various nations, with a focus on EU members and candidate countries. In order to enrich the dataset, I added calculated columns for Geographic Regions, EU Candidates, and EU Membership Status based on historical data, allowing users to explore trends within specific regional contexts and EU expansion over time. Key features include:
 
 <img align="left" width="500" height="300"  alt="Inventory Dashboard" style="margin: 0 10px 0 0;" src="Images/Main_page.png"/> 
