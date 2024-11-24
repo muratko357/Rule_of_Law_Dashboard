@@ -1,0 +1,193 @@
+Indicator Description = SWITCH(
+    TRUE(),
+    'Parameter RL'[Indicator RL] = "Access to justice for men", """Question: Do men enjoy secure and effective access to justice? 
+    Clarification: This question specifies the extent to which men can bring cases   before the courts without risk to their personal safety, trials are fair, and men have effective ability to seek redress if public authorities violate their rights, including the rights to counsel, defense, and        appeal. This question does not ask you to assess the relative access to justice men and women. Thus, it is possible to assign the lowest possible score to a country even if men and women enjoy equal — and extremely limited — access to justice.
+        Responses:
+        0: Secure and effective access to justice for men is non-existent.
+        1: Secure and effective access to justice for men is usually not established or widely respected.
+        2: Secure and effective access to justice for men is inconsistently observed. Minor problems characterize most cases or occur rather unevenly across different parts of the country.
+        3: Secure and effective access to justice for men is usually observed.
+        4: Secure and effective access to justice for men is almost always observed.
+    Scale: Ordinal, converted to interval by the measurement model"" (V-Dem Codebook, 2024, p.184).
+",
+    'Parameter RL'[Indicator RL] = "Access to justice for women", """Question: Do women enjoy equal, secure, and effective access to justice? 
+    Clarification: This question specifies the extent to which women can bring cases before the courts without risk to their personal safety, trials are fair, and women have effective ability to seek redress if public authorities violate their rights, including the rights to counsel, defense, and appeal. This question does not ask you to assess the relative access to justice men and women. Thus, it is possible to assign the lowest possible score to a country even if men and women enjoy equal — and extremely limited — access to justice.
+        Responses:
+        0: Secure and effective access to justice for women is non-existent.
+        1: Secure and effective access to justice for women is usually not established or widely respected.
+        2: Secure and effective access to justice for women is inconsistently observed. Minor problems
+        characterize most cases or occur rather unevenly across different parts of the country.
+        3: Secure and effective access to justice for women is usually observed.
+        4: Secure and effective access to justice for women is almost always observed.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.184).
+",
+    'Parameter RL'[Indicator RL] = "Compliance with high court", """Question: How often would you say the government complies with important decisions of the high court with which it disagrees?
+        Responses:
+        0: Never.
+        1: Seldom.
+        2: About half of the time.
+        3: Usually.
+        4: Always.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.177).
+",
+    'Parameter RL'[Indicator RL] = "Compliance with judiciary", """Question: How often would you say the government complies with important decisions by other courts with which it disagrees? 
+    Clarification: We are looking for a summary judgment for the entire judiciary, excluding the high court. You should consider judges on both ordinary courts and specialized courts.
+        Responses:
+        0: Never.
+        1: Seldom.
+        2: About half of the time.
+        3: Usually.
+        4: Always.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.178).
+",
+    'Parameter RL'[Indicator RL] = "Executive bribery and corrupt exchanges", """Question: How routinely do members of the executive (the head of state, the head of government, and cabinet ministers), or their agents, grant favors in exchange for bribes, kickbacks, or other material inducements?
+        Responses:
+        0: It is routine and expected.
+        1: It happens more often than not in dealings with the executive.
+        2: It happens but is unpredictable: those dealing with the executive find it hard to predict when an inducement will be necessary.
+        3: It happens occasionally but is not expected.
+        4: It never, or hardly ever, happens.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.121).
+",
+    'Parameter RL'[Indicator RL] = "Executive embezzlement and theft", """Question: How often do members of the executive (the head of state, the head of government, and cabinet ministers), or their agents, steal, embezzle, or misappropriate public funds or other state resources for personal or family use?
+        Responses:
+        0: Constantly. Members of the executive act as though all public resources were their personal or family property.
+        1: Often. Members of the executive are responsible stewards of selected public resources but treat the rest like personal property.
+        2: About half the time. Members of the executive are about as likely to be responsible stewards of selected public resources as they are to treat them like personal property.
+        3: Occasionally. Members of the executive are responsible stewards of most public resources but treat selected others like personal property.
+        4: Never, or hardly ever. Members of the executive are almost always responsible stewards of public resources and keep them separate from personal or family property.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.121).
+",
+    'Parameter RL'[Indicator RL] = "Executive respects constitution", """Question: Do members of the executive (the head of state, the head of government, and cabinet ministers) respect the constitution?
+        Responses:
+        0: Members of the executive violate the constitution whenever they want to, without legal consequences.
+        1: Members of the executive violate most provisions of the constitution without legal consequences, but still must respect certain provisions.
+        2: Somewhere in between (1) and (3). Members of the executive would face legal consequences for violating most provisions of the constitution, but can disregard some provisions without any legal consequences.
+        3: Members of the executive rarely violate the constitution, and when it happens they face legal charges.
+        4: Members of the executive never violate the constitution.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.120).
+",
+    'Parameter RL'[Indicator RL] = "High court independence", """Question: When the high court in the judicial system is ruling in cases that are salient to the government, how often would you say that it makes decisions that merely reflect government wishes regardless of its sincere view of the legal record? 
+    Clarification: We are seeking to identify autonomous judicial decision-making and its absence. Decisions certainly can reflect government wishes without 'merely reflectin' those wishes, i.e. a court can be autonomous when its decisions support the government’s position. This is because a court can be fairly persuaded that the government’s position is meritorious. By 'merely reflect the wishes of the government' we mean that the court’s own view of the record, its sincere evaluation of the record, is irrelevant to the outcome. The court simply adopts the government’s position regardless of its sincere view of the record.
+        Responses:
+        0: Always.
+        1: Usually.
+        2: About half of the time.
+        3: Seldom.
+        4: Never.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.176).
+",
+    'Parameter RL'[Indicator RL] = "Lower court independence", """Question: When judges not on the high court are ruling in cases that are salient to the government, how often would you say that their decisions merely reflect government wishes regardless of their sincere view of the legal record?
+        Responses:
+        0: Always.
+        1: Usually.
+        2: About half of the time.
+        3: Seldom.
+        4: Never.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.177).
+",
+    'Parameter RL'[Indicator RL] = "Judicial accountability", """Question: When judges are found responsible for serious misconduct, how often are they removed from their posts or otherwise disciplined?
+        Responses:
+        0: Never.
+        1: Seldom.
+        2: About half of the time.
+        3: Usually.
+        4: Always.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.175).
+",
+    'Parameter RL'[Indicator RL] = "Judicial corruption decision", """Question: How often do individuals or businesses make undocumented extra payments or bribes in order to speed up or delay the process or to obtain a favorable judicial decision?
+        Responses:
+        0: Always.
+        1: Usually.
+        2: About half of the time.
+        3: Not usually.
+        4: Never.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.176).
+",
+    'Parameter RL'[Indicator RL] = "Public sector corrupt exchanges", """Question: How routinely do public sector employees grant favors in exchange for bribes, kickbacks, or other material inducements?
+    Clarification: When responding to this question, we would like to you think about a typical person employed by the public sector, excluding the military. If you think there are large discrepancies between branches of the public sector, between the national/federal and subnational/state level, or between the core bureaucracy and employees working with public service delivery, please try to average them out before stating your response.
+        Responses:
+        0: Extremely common. Most public sector employees are systematically involved in petty but corrupt exchanges almost all the time.
+        1: Common. Such petty but corrupt exchanges occur regularly involving a majority of public employees.
+        2: Sometimes. About half or less than half of public sector employees engage in such exchanges for petty gains at times.
+        3: Scattered. A small minority of public sector employees engage in petty corruption from time to time.
+        4: No. Never, or hardly ever.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.122).
+",
+    'Parameter RL'[Indicator RL] = "Public sector theft", """Question: How often do public sector employees steal, embezzle, or misappropriate public funds or other state resources for personal or family use?
+     Clarification: When responding to this question, we would like you to think about a typical person employed by the public sector, excluding the military. If you think there are large discrepancies between branches of the public sector, between the national/federal and subnational/state level, or between the core bureaucracy and employees working with public service delivery, please try to average them out before stating your response.
+        Responses:
+        0: Constantly. Public sector employees act as though all public resources were their personal or family property.
+        1: Often. Public sector employees are responsible stewards of selected public resources but treat the rest like personal property.
+        2: About half the time. Public sector employees are about as likely to be responsible stewards of selected public resources as they are to treat them like personal property.
+        3: Occasionally. Public sector employees are responsible stewards of most public resources but treat selected others like personal property.
+        4: Never, or hardly ever. Public sector employees are almost always responsible stewards of public resources and keep them separate from personal or family property.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.122).
+",
+    'Parameter RL'[Indicator RL] = "Rigorous and impartial public administration", """Question: Are public officials rigorous and impartial in the performance of their duties? 
+    Clarification: This question focuses on the extent to which public officials generally abide by the law and treat like cases alike, or conversely, the extent to which public administration is characterized by arbitrariness and biases (i.e., nepotism, cronyism, or discrimination). The question covers the public officials that handle the cases of ordinary people. If no functioning public administration exists, the lowest score (0) applies.
+        Responses:
+        0: The law is not respected by public officials. Arbitrary or biased administration of the law is rampant.
+        1: The law is weakly respected by public officials. Arbitrary or biased administration of the law is widespread.
+        2: The law is modestly respected by public officials. Arbitrary or biased administration of the law is moderate.
+        3: The law is mostly respected by public officials. Arbitrary or biased administration of the law is limited.
+        4: The law is generally fully respected by the public officials. Arbitrary or biased administration of the law is very limited.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.183).
+",
+    'Parameter RL'[Indicator RL] = "Rule of Law Index", """Question: To what extent are laws transparently, independently, predictably, impartially, and equally enforced, and to what extent do the actions of government officials comply with the law?
+    Scale: Interval, from low to high (0-1).
+    Aggregation: The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for compliance with high court, compliance with judiciary, high court independence, lower court independence, executive respects constitution, rigorous and impartial public administration, transparent laws with predictable enforcement, access to justice for men, access to justice for women, judicial accountability, judicial corruption decision, public sector corrupt exchanges, public sector theft, executive bribery and corrupt exchanges, executive embezzlement and theft."" (V-Dem Codebook, 2024, p.308).
+",
+    'Parameter RL'[Indicator RL] = "Transparent laws with predictable enforcement", """Question: Are the laws of the land clear, well publicized, coherent (consistent with each other),relatively stable from year to year, and enforced in a predictable manner? 
+    Clarification: This question focuses on the transparency and predictability of the laws of the land. 
+        Responses:
+        0: Transparency and predictability are almost non-existent. The laws of the land are created and/or enforced in completely arbitrary fashion.
+        1: Transparency and predictability are severely limited. The laws of the land are more often than not created and/or enforced in arbitrary fashion.
+        2: Transparency and predictability are somewhat limited. The laws of the land are mostly created in a non-arbitrary fashion but enforcement is rather arbitrary in some parts of the country.
+        3: Transparency and predictability are fairly strong. The laws of the land are usually created and enforced in a non-arbitrary fashion. 
+        4: Transparency and predictability are very strong. The laws of the land are created and enforced in a non-arbitrary fashion.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.183).
+",
+    'Parameter RL'[Indicator RL] = "Property rights for women", """Question: Do women enjoy the right to private property?
+    Clarification: Private property includes the right to acquire, possess, inherit, and sell private property, including land. Limits on property rights may come from the state (which may legally limit rights or fail to enforce them); customary laws and practices; or religious or social norms. This question concerns the right to private property, not actual ownership of property. This question does not ask you to assess the relative rights of men and women. Thus, it is possible to assign the lowest possible score to a country even if men and women enjoy equal — and very minimal — property rights.
+        Responses:
+        0: Virtually no women enjoy private property rights of any kind.
+        1: Some women enjoy some private property rights, but most have none.
+        2: Many women enjoy many private property rights, but a smaller proportion enjoys few or none.
+        3: More than half of women enjoy most private property rights, yet a smaller share of women have much more restricted rights.
+        4: Most women enjoy most private property rights but a small minority does not.
+        5: Virtually all women enjoy all, or almost all, property rights.
+    cale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.183).
+    ",
+    'Parameter RL'[Indicator RL] = "Property rights for men", """Question: Do men enjoy the right to private property?
+    Clarification: Private property includes the right to acquire, possess, inherit, and sell private property, including land. Limits on property rights may come from the state (which may legally limit rights or fail to enforce them); customary laws and practices; or religious or social norms. This question concerns the right to private property, not actual ownership of property. This question does not ask you to assess the relative rights of men and women. Thus, it is possible to assign the lowest possible score to a country even if men and women enjoy equal — and very minimal — property rights.
+        Responses:
+        0: Virtually no men enjoy private property rights of any kind.
+        1: Some men enjoy some private property rights, but most have none.
+        2: Many men enjoy many private property rights, but a smaller proportion enjoys few or none.
+        3: More than half of men enjoy most private property rights, yet a smaller share of men have much more restricted rights.
+        4: Most men enjoy most private property rights but a small minority does not.
+        5: Virtually all men enjoy all, or almost all property rights.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.183).
+    ",
+    'Parameter RL'[Indicator RL] = "Freedom from torture", """Question: Is there freedom from torture?
+    Clarification: Torture refers to the purposeful inflicting of extreme pain, whether mental or physical, with an aim to extract information or intimidate victims, who are in a state of incarceration. Here, we are concerned with torture practiced by state officials or other agents of the state (e.g., police, security forces, prison guards, and paramilitary groups).
+    Responses:
+    0: Not respected by public authorities. Torture is practiced systematically and is incited and approved by the leaders of government.
+    1: Weakly respected by public authorities. Torture is practiced frequently but is often not incited or approved by top leaders of government. At the same time, leaders of government are not actively working to prevent it.
+    2: Somewhat. Torture is practiced occasionally but is typically not approved by top leaders of government.
+    3: Mostly respected by public authorities. Torture is practiced in a few isolated cases but is not incited or approved by top government leaders.
+    4: Fully respected by public authorities. Torture is non-existent.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.183).
+",
+    'Parameter RL'[Indicator RL] = "Freedom from political killings", """Clarification: Political killings are killings by the state or its agents without due process of law for the purpose of eliminating political opponents. These killings are the result of deliberate use of lethal force by the police, security forces, prison officials, or other agents of the state (including paramilitary groups).
+    Responses:
+    0: Not respected by public authorities. Political killings are practiced systematically and they are typically incited and approved by top leaders of government.
+    1: Weakly respected by public authorities. Political killings are practiced frequently and top leaders of government are not actively working to prevent them.
+    2: Somewhat respected by public authorities. Political killings are practiced occasionally but they are typically not incited and approved by top leaders of government.
+    3: Mostly respected by public authorities. Political killings are practiced in a few isolated cases but they are not incited or approved by top leaders of government.
+    4: Fully respected by public authorities. Political killings are non-existent.
+    Scale: Ordinal, converted to interval by the measurement model."" (V-Dem Codebook, 2024, p.183).
+",
+""
+)
