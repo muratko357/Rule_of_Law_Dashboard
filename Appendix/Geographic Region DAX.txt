@@ -1,0 +1,48 @@
+Geographic Region = 
+SWITCH(
+    TRUE(),
+    'Country_Year'[country_name] IN {
+        "Austria", "Belgium", "Czechia", "Denmark", "France", "Germany", "Greece", "Hungary", "Iceland", "Ireland", 
+        "Italy", "Luxembourg", "Netherlands", "Norway", "Poland", "Portugal", "Spain", "Sweden", "Switzerland", 
+        "United Kingdom", "Albania", "Bulgaria", "Croatia", "Cyprus", "Estonia", "Finland", "Latvia", "Lithuania", 
+        "Malta", "Moldova", "Montenegro", "North Macedonia", "Romania", "Serbia", "Slovakia", "Slovenia", "Kosovo",
+        "Bosnia and Herzegovina", "Ukraine", "Georgia", "Türkiye"
+    }, "Europe",
+    'Country_Year'[country_name] IN {
+        "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan", "Uzbekistan", "Russia", "Armenia", "Azerbaijan", "Belarus"
+    }, "Russia/Central Asia",
+    'Country_Year'[country_name] IN {
+        "Canada", "United States of America"
+    }, "North America",
+    'Country_Year'[country_name] IN {
+        "Antigua and Barbuda", "Bahamas", "Barbados", "Belize", "Costa Rica", "Cuba", "Dominica", "Dominican Republic",
+        "El Salvador", "Grenada", "Guatemala", "Haiti", "Honduras", "Jamaica", "Mexico", "Nicaragua", "Panama",
+        "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Trinidad and Tobago",
+        "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "Guyana", "Paraguay", "Peru", "Suriname", "Uruguay", "Venezuela"
+    }, "South/Central America",
+    'Country_Year'[country_name] IN {
+        "Algeria", "Bahrain", "Egypt", "Iran", "Iraq", "Israel", "Jordan", "Kuwait", "Lebanon", "Libya",
+        "Morocco", "Oman", "Qatar", "Saudi Arabia", "Syria", "Tunisia", "United Arab Emirates", "Yemen",
+        "Palestine/Gaza", "Palestine/West Bank"
+    }, "Middle East/North Africa",
+    'Country_Year'[country_name] IN {
+        "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cape Verde", "Cameroon", "Central African Republic",
+        "Chad", "Comoros", "Congo", "Democratic Republic of the Congo", "Djibouti", "Equatorial Guinea", "Eritrea",
+        "Eswatini", "Ethiopia", "Gabon", "Gambia", "The Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Ivory Coast", "Kenya",
+        "Lesotho", "Liberia", "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius", "Mozambique", "Namibia",
+        "Niger", "Nigeria", "Rwanda", "Sao Tome and Principe", "Senegal", "Seychelles", "Sierra Leone", "Somalia",
+        "South Africa", "South Sudan", "Sudan", "Tanzania", "Togo", "Uganda", "Zambia", "Zimbabwe", "Somaliland", "Republic of the Congo", "Zanzibar"
+    }, "Sub-Saharan Africa",
+    'Country_Year'[country_name] IN {
+        "China", "Japan", "Mongolia", "North Korea", "South Korea", "Taiwan", "Hong Kong"
+    }, "East Asia",
+    'Country_Year'[country_name] IN {
+        "Afghanistan", "Bangladesh", "Bhutan", "India", "Maldives", "Nepal", "Pakistan", "Sri Lanka"
+    }, "South Asia",
+    'Country_Year'[country_name] IN {
+        "Brunei", "Cambodia", "Indonesia", "Laos", "Malaysia", "Myanmar", "Philippines", "Singapore", "Thailand",
+        "Vietnam", "Australia", "Fiji", "Kiribati", "Marshall Islands", "Micronesia", "Nauru", "New Zealand", "Palau",
+        "Papua New Guinea", "Samoa", "Solomon Islands", "Tonga", "Tuvalu", "Vanuatu", "Timor-Leste", "Burma/Myanmar"
+    }, "Southeast Asia/Australia",
+    "Other"  // Default category if no match is found
+)
