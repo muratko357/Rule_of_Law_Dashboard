@@ -1,0 +1,28 @@
+Selected Indicator Value = 
+VAR SelectedParam = SELECTEDVALUE('Parameter RL'[Indicator RL], "Rule of Law Index")  // Default is Rule of Law Index if nothing is selected
+RETURN
+SWITCH(
+    TRUE(),
+     SelectedParam =   "Rule of Law Index", CALCULATE(AVERAGE('RL-Values'[Rule of Law Index])),
+     SelectedParam =   "Freedom from torture", CALCULATE(AVERAGE('RL-Values'[Freedom from torture])),
+     SelectedParam =   "Freedom from political killings", CALCULATE(AVERAGE('RL-Values'[Freedom from political killings])),
+     SelectedParam =   "Transparent laws with predictable enforcement", CALCULATE(AVERAGE('RL-Values'[Transparent laws with predictable enforcement])),
+     SelectedParam =   "Access to justice for men", CALCULATE(AVERAGE('RL-Values'[Access to justice for men])),
+     SelectedParam =   "Access to justice for women", CALCULATE(AVERAGE('RL-Values'[Access to justice for women])),
+     SelectedParam =   "Judicial accountability", CALCULATE(AVERAGE('RL-Values'[Judicial accountability])),
+     SelectedParam =   "Judicial corruption decision", CALCULATE(AVERAGE('RL-Values'[Judicial corruption decision])),
+     SelectedParam =   "High court independence", CALCULATE(AVERAGE('RL-Values'[High court independence])),
+     SelectedParam =   "Lower court independence", CALCULATE(AVERAGE('RL-Values'[Lower court independence])),
+     SelectedParam =   "Compliance with high court", CALCULATE(AVERAGE('RL-Values'[Compliance with high court])),
+     SelectedParam =   "Compliance with judiciary", CALCULATE(AVERAGE('RL-Values'[Compliance with judiciary])),
+     SelectedParam =   "Executive respects constitution", CALCULATE(AVERAGE('RL-Values'[Executive respects constitution])),
+     SelectedParam =   "Executive bribery and corrupt exchanges", CALCULATE(AVERAGE('RL-Values'[Executive bribery and corrupt exchanges])),
+     SelectedParam =   "Executive embezzlement and theft", CALCULATE(AVERAGE('RL-Values'[Executive embezzlement and theft])),
+     SelectedParam =   "Public sector corrupt exchanges", CALCULATE(AVERAGE('RL-Values'[Public sector corrupt exchanges])),
+     SelectedParam =   "Public sector theft", CALCULATE(AVERAGE('RL-Values'[Public sector theft])),
+     SelectedParam =   "Rigorous and impartial public administration", CALCULATE(AVERAGE('RL-Values'[Rigorous and impartial public administration])),
+     SelectedParam =   "Property rights for women", CALCULATE(AVERAGE('RL-Values'[Property rights for women])),
+     SelectedParam =   "Property rights for men", CALCULATE(AVERAGE('RL-Values'[Property rights for men])),
+    BLANK()  // Fallback option in case nothing is selected
+)
+
