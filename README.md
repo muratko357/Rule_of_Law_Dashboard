@@ -30,7 +30,7 @@ Tooltips and dynamic text boxes provide definitions and detailed explanations fo
 <br clear="left"/>
 <small style="color:gray; font-size: 0.8em;"><em>Screenshot: Drill through page</em></small>
 
----
+--- 
 
 **Appendix**
 
