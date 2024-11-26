@@ -1,4 +1,4 @@
-# Visualizing Rule of Law: A Dynamic Dashboard for Historical and Regional Analysis
+# Visualizing Rule of Law: A Dynamic Dashboard for Historical, Regional, and Country-Level Analysis
 
 _Tools: Power BI, DAX_
 
