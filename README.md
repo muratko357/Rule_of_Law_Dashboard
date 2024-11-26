@@ -1,6 +1,4 @@
-# Rule of Law Dashboard Project
-
-## Rule of Law: A Historical Comparison of Countries' Performances 1789-2023
+# Visualizing Rule of Law: A Dynamic Dashboard for Historical and Regional Analysis
 
 _Tools: Power BI, DAX_
 
@@ -10,6 +8,7 @@ This interactive Power BI dashboard leverages the V-Dem Dataset (Varieties of De
 <br clear="left"/>
 <small style="color:gray; font-size: 0.8em;"><em>Screenshot: Main page</em></small>
 <br clear="left"/>
+<br/>
 
 **Historical Trends Analysis:**
 Visualizes the evolution of governance indicators, such as access to justice and judicial independence, enabling users to track trends over centuries. EU expansion is highlighted with dynamically updated information as users hover over specific years.
