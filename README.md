@@ -4,11 +4,12 @@ _Tools: Power BI, DAX_
 
 This interactive Power BI dashboard utilizes the V-Dem Dataset (Varieties of Democracy) to examine the Rule of Law Index and related indicators across global nations from 1789 to 2023. Through advanced DAX calculations, it provides dynamic insights into historical trends, including judicial independence, access to justice, and the predictability of legal enforcement. By offering perspectives on governance evolutions at regional and national scales, the dashboard empowers researchers, policymakers, and security analysts to explore institutional resilience, societal stability, and the trajectory of democratic development.
 
-<img align="left" width="500" height="300"  alt="Inventory Dashboard" style="margin: 0 10px 0 0;" src="Images/Main_page.png"/>
+<div align="center">
+  <img width="700" height="393" alt="Rule of Law Dashboard" src="Images/Main_page.png".png"/>
+  <br clear="left"/>
+  <small style="color:gray; font-size: 0.8em;"><em>Screenshot: Main page</em></small>
+</div>
 <br clear="left"/>
-<small style="color:gray; font-size: 0.8em;"><em>Screenshot: Main page</em></small>
-<br clear="left"/>
-<br/>
 
 **Historical Trends Analysis:**
 Visualizes the evolution of rule of law indicators, enabling users to track trends over centuries. EU expansion is highlighted with dynamically updated information as users hover over specific years.
@@ -25,9 +26,12 @@ On drill-through pages, users can view each selected country’s historical name
 **Interactive Tooltips and Descriptions:**
 Tooltips and dynamic text boxes provide definitions and detailed explanations for each indicator, alongside contextual information from the dataset codebook and relevant academic references.
 
-<img align="left" width="500" height="300"  alt="Inventory Dashboard" style="margin: 0 10px 0 0;" src="Images/Drill_through_page.png"/>   
+<div align="center">
+  <img width="700" height="393" alt="Rule of Law Dashboard2" src="Images/Drill_through_page.png".png"/>
+  <br clear="left"/>
+  <small style="color:gray; font-size: 0.8em;"><em>Screenshot: Drill through page</em></small>
+</div>
 <br clear="left"/>
-<small style="color:gray; font-size: 0.8em;"><em>Screenshot: Drill through page</em></small>
 
 **Impact:**
 
