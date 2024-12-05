@@ -24,7 +24,7 @@ Users can select individual countries or regions, such as Europe or EU candidate
 On drill-through pages, users can view each selected country’s historical name, historical score, and ranking for each rule of law indicator by year, enabling detailed, year-over-year comparisons within a global context.
 
 **Interactive Tooltips and Descriptions:**
-Tooltips and dynamic text boxes provide definitions and detailed explanations for each indicator, alongside contextual information from the dataset codebook and relevant academic references.
+Tooltips and dynamic text boxes offer relevant academic references, detailed definitions, and explanations for each indicator, complemented by contextual information and additional insights into significant EU expansions and political events.
 
 <div align="center">
   <img width="700" height="393" alt="Rule of Law Dashboard2" src="Images/Drill_through_page.png".png"/>
