@@ -5,7 +5,7 @@ _Tools: Power BI, DAX_
 This interactive Power BI dashboard utilizes the V-Dem Dataset (Varieties of Democracy) to examine the Rule of Law Index and related indicators across global nations from 1789 to 2023. Through advanced DAX calculations, it provides dynamic insights into historical trends, including judicial independence, access to justice, and the predictability of legal enforcement. By offering perspectives on governance evolutions at regional and national scales, the dashboard empowers researchers, policymakers, and security analysts to explore institutional resilience, societal stability, and the trajectory of democratic development.
 
 <div align="center">
-  <img width="700" height="393" alt="Rule of Law Dashboard" src="Images/Main_page.png".png"/>
+  <img width="700" height="393" alt="Rule of Law Dashboard" src="Images/RL-Main_page4.png"/>
   <br clear="left"/>
   <small style="color:gray; font-size: 0.8em;"><em>Screenshot: Main page</em></small>
 </div>
