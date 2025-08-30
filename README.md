@@ -27,7 +27,7 @@ On drill-through pages, users can view each selected country’s historical name
 Tooltips and dynamic text boxes offer relevant academic references, detailed definitions, and explanations for each indicator, enhanced with contextual information and additional insights into significant EU expansions and some key political events. These features are designed to be customizable and can be further refined to address specific regional or country-specific requirements.
 
 <div align="center">
-  <img width="700" height="393" alt="Rule of Law Dashboard2" src="Images/Drill_through_page.png".png"/>
+  <img width="700" height="400" alt="Rule of Law Dashboard2" src="Images/Drill_through_page.png".png"/>
   <br clear="left"/>
   <small style="color:gray; font-size: 0.8em;"><em>Screenshot: Drill through page</em></small>
 </div>
